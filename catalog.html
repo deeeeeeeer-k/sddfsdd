@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ROPETKA — Інтернет-магазин</title>
+
+  <!-- Іконки FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- CSS стилі -->
+  <link rel="stylesheet" href="catalog.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-container">
+      
+      <!-- Меню бургер -->
+      <button class="icon-btn burger-btn" id="burgerBtn" aria-label="Меню">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <!-- Логотип -->
+      <a href="#" class="logo-link">
+        <div class="logo-icon">
+          <img class="logo-img" src="image.png" alt="ROPETKA Logo">
+        </div>
+        <span class="logo-text">ROPETKA</span>
+      </a>
+
+      <!-- Кнопка Каталог -->
+      <a href="catalog.html" class="catalog-btn" id="catalogBtn">
+        <i class="fa-solid fa-border-all"></i>
+        <span>Каталог</span>
+      </a>
+
+      <!-- Пошуковий блок -->
+      <div class="search-box">
+        <div class="search-input-wrapper">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" placeholder="Я шукаю...">
+        </div>
+        <button class="search-btn">Знайти</button>
+      </div>
+
+      <!-- Права частина (Профіль, Порівняння, Кошик) -->
+      <div class="header-actions">
+        <button class="icon-btn" aria-label="Профіль">
+          <i class="fa-regular fa-user"></i>
+        </button>
+        <button class="icon-btn" aria-label="Порівняння">
+          <i class="fa-solid fa-scale-balanced"></i>
+        </button>
+        <button class="icon-btn" aria-label="Кошик">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <div class="main-wrapper">
+    <!-- Бокове меню -->
+    <nav class="sidebar-menu" id="sidebarMenu">
+      <ul class="menu-list">
+        <li class="menu-item"><a href="#"><span class="icon">⚡</span>Енергонезалежність</a></li>
+        <li class="menu-item"><a href="index2.html"><span class="icon">💻</span>Ноутбуки та комп'ютери</a></li>
+        <li class="menu-item"><a href="index3.html"><span class="icon">📱</span>Смартфони, ТВ і електроніка</a></li>
+        <li class="menu-item"><a href="index4.html"><span class="icon">🎮</span>Товари для геймерів</a></li>
+        <li class="menu-item"><a href="index5.html"><span class="icon">🧴</span>Краса та здоров'я</a></li>
+        <li class="menu-item highlight"><a href="index6.html"><span class="icon">🏷️</span>Розпродаж: до -60%</a></li>
+      </ul>
+
+      <hr class="divider">
+
+      <ul class="menu-list">
+        <li class="menu-item"><a href="#"><span class="icon">❓</span>Довідковий центр</a></li>
+        <li class="menu-item chat-link"><a href="#"><span class="icon">✈️</span>Чат з ROPETKA</a></li>
+        <li class="menu-item"><a href="#"><span class="icon">🏪</span>Магазини Ropetka</a></li>
+        <li class="menu-item location"><a href="#"><span class="icon">📍</span>Київ <small>Київ обл., Київ р-н.</small></a></li>
+      </ul>
+    </nav>
+
+    <!-- Основний контент сайту -->
+    <main class="content">
+      <h1 class="page-title">Каталог товарів</h1>
+
+      <div class="products-grid">
+        
+        <!-- Картка 1: Ігровий Ноутбук -->
+        <div class="product-card">
+          <div class="product-image-box">
+            <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=500&auto=format&fit=crop" alt="Ноутбук ASUS ROG" class="product-img">
+          </div>
+          <h3 class="product-title">Ноутбук ASUS ROG Strix G16 (16", Core i7, RAM 16GB, SSD 1TB)</h3>
+          <div class="product-price-box">
+            <span class="product-price">54 999 ₴</span>
+            <button class="buy-btn" aria-label="Купити">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Картка 2: Готовий ПК -->
+        <div class="product-card">
+          <div class="product-image-box">
+            <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?w=500&auto=format&fit=crop" alt="Ігровий комп'ютер ROPETKA Gaming" class="product-img">
+          </div>
+          <h3 class="product-title">Комп'ютер ROPETKA Gaming Pro (Ryzen 7, RTX 4070, RAM 32GB)</h3>
+          <div class="product-price-box">
+            <span class="product-price">68 500 ₴</span>
+            <button class="buy-btn" aria-label="Купити">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Картка 3: Ультрабук -->
+        <div class="product-card">
+          <div class="product-image-box">
+            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500&auto=format&fit=crop" alt="Ноутбук Apple MacBook Air" class="product-img">
+          </div>
+          <h3 class="product-title">Ноутбук Apple MacBook Air 13" M2 (8GB / 256GB) Space Gray</h3>
+          <div class="product-price-box">
+            <span class="product-price">42 999 ₴</span>
+            <button class="buy-btn" aria-label="Купити">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Картка 4: Робоча станція -->
+        <div class="product-card">
+          <div class="product-image-box">
+            <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=500&auto=format&fit=crop" alt="Комп'ютер ROPETKA Workstation" class="product-img">
+          </div>
+          <h3 class="product-title">Комп'ютер ROPETKA Workstation (Core i5, RTX 3060, RAM 16GB)</h3>
+          <div class="product-price-box">
+            <span class="product-price">36 200 ₴</span>
+            <button class="buy-btn" aria-label="Купити">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Картка 5: Samsung S26 Ultra -->
+        <div class="product-card">
+          <div class="product-image-box">
+            <img src="https://content.rozetka.com.ua/goods/images/big/653651170.jpg" alt="Samsung Galaxy S26 Ultra" class="product-img">
+          </div>
+          <h3 class="product-title">Мобільний телефон Samsung Galaxy S26 Ultra 16GB/1TB Black</h3>
+          <div class="product-price-box">
+            <span class="product-price">54 999 ₴</span>
+            <button class="buy-btn" aria-label="Купити">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Картка 6: Samsung Fold 8 -->
+        <div class="product-card">
+          <div class="product-image-box">
+            <img src="https://content1.rozetka.com.ua/goods/images/big/674258089.jpg" alt="Samsung Galaxy Fold 8 Ultra" class="product-img">
+          </div>
+          <h3 class="product-title">Мобільний телефон Samsung Galaxy Fold 8 Ultra 12/512GB Graphite</h3>
+          <div class="product-price-box">
+            <span class="product-price">99 999 ₴</span>
+            <button class="buy-btn" aria-label="Купити">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Картка 7: iPhone 17 Pro Max -->
+        <div class="product-card">
+          <div class="product-image-box">
+            <img src="https://content2.rozetka.com.ua/goods/images/big/594364394.jpg" alt="iPhone 17 Pro Max" class="product-img">
+          </div>
+          <h3 class="product-title">Мобільний телефон Apple iPhone 17 Pro Max 256GB Cosmic Orange</h3>
+          <div class="product-price-box">
+            <span class="product-price">42 999 ₴</span>
+            <button class="buy-btn" aria-label="Купити">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Картка 8: Nokia 1280 -->
+        <div class="product-card">
+          <div class="product-image-box">
+            <img src="https://content2.rozetka.com.ua/goods/images/big/588099217.jpg" alt="Nokia 1280" class="product-img">
+          </div>
+          <h3 class="product-title">Мобільний телефон кнопковий Nokia 1280 Black</h3>
+          <div class="product-price-box">
+            <span class="product-price">1 200 ₴</span>
+            <button class="buy-btn" aria-label="Купити">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+        </div>
+
+       <!-- Картка 1: Ігровий Ноутбук -->
+        <div class="product-card">
+          <div class="product-image-box">
+            <img src="https://content2.rozetka.com.ua/goods/images/big/392132677.jpg" alt="Ноутбук ASUS ROG" class="product-img">
+          </div>
+          <h3 class="product-title">Ігрова приставка Sony PlayStation 5 Slim Digital Edition</h3>
+          <div class="product-price-box">
+            <span class="product-price">54 999 ₴</span>
+            <button class="buy-btn" aria-label="Купити">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Картка 2: Готовий ПК -->
+        <div class="product-card">
+          <div class="product-image-box">
+            <img src="https://content.rozetka.com.ua/goods/images/big/279840474.png" alt="Ігровий комп'ютер ROPETKA Gaming" class="product-img">
+          </div>
+          <h3 class="product-title">Консоль Valve Steam Deck OLED 512GB Black</h3>
+          <div class="product-price-box">
+            <span class="product-price">68 500 ₴</span>
+            <button class="buy-btn" aria-label="Купити">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Картка 3: Ультрабук -->
+        <div class="product-card">
+          <div class="product-image-box">
+            <img src="https://content.rozetka.com.ua/goods/images/big/600378360.jpg" alt="Ноутбук Apple MacBook Air" class="product-img">
+          </div>
+          <h3 class="product-title">Стаціонарна ігрова приставка Microsoft Xbox Series X 2 TB Galaxy Black</h3>
+          <div class="product-price-box">
+            <span class="product-price">42 999 ₴</span>
+            <button class="buy-btn" aria-label="Купити">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Картка 4: Робоча станція / Монітор і ПК -->
+        <div class="product-card">
+          <div class="product-image-box">
+            <img src="https://content1.rozetka.com.ua/goods/images/big/559430612.jpg" alt="Комп'ютер ROPETKA Workstation" class="product-img">
+          </div>
+          <h3 class="product-title">Портативна ігрова консоль Nintendo Switch 2</h3>
+          <div class="product-price-box">
+            <span class="product-price">36 200 ₴</span>
+            <button class="buy-btn" aria-label="Купити">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+        </div>
+
+
+
+      </div>
+    </main>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="catalog.js"></script>
+</body>
+</html>
